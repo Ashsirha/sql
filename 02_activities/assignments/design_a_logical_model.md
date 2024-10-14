@@ -4,18 +4,22 @@
 Create a logical model for a small bookstore. 📚
 
 At the minimum it should have employee, order, sales, customer, and book entities (tables). Determine sensible column and table design based on what you know about these concepts. Keep it simple, but work out sensible relationships to keep tables reasonably sized. Include a date table. There are several tools online you can use, I'd recommend [_Draw.io_](https://www.drawio.com/) or [_LucidChart_](https://www.lucidchart.com/pages/).
-![Ans 1](image.png)
+![Ans1](https://github.com/user-attachments/assets/23197917-7d13-4e1b-a998-062f37e5d94e)
+
 ## Question 2
 We want to create employee shifts, splitting up the day into morning and evening. Add this to the ERD.
-![Ans 2](image-1.png)
+![Ans2](https://github.com/user-attachments/assets/607f0897-7021-4893-b61d-8cdca649af3a)
+
 ## Question 3
 The store wants to keep customer addresses. Propose two architectures for the CUSTOMER_ADDRESS table, one that will retain changes, and another that will overwrite. Which is type 1, which is type 2?
 
 _Hint, search type 1 vs type 2 slowly changing dimensions._
 
 Bonus: Are there privacy implications to this, why or why not?
-![Ans3-Override](image-2.png)
-![Ans3-NewEntry](image-3.png)
+![Ans3-1](https://github.com/user-attachments/assets/f2801e72-e4de-44f6-96d1-404f3485a518)
+
+![Ans3-2](https://github.com/user-attachments/assets/97781812-e0de-43ae-a416-0f251d3024ed)
+
 ```
 A Type 1 architecture (overwriting) poses fewer privacy risks as it only retains the current address, minimizing data exposure in case of breaches. Type 2 (retaining history) increases risk since it stores past addresses, leading to larger data footprints and higher exposure if compromised.
 ```
